@@ -1,8 +1,9 @@
 body{
-  font-family: Arial, sans-serif;
+  font-family: Arial;
   background: linear-gradient(135deg,#ffb6c1,#ffc0cb);
   text-align:center;
   padding:40px;
+  overflow:hidden;
 }
 
 h1{
@@ -31,7 +32,7 @@ button{
 
 video{
   width:420px;
-  margin-top:25px;
+  margin-top:20px;
   border-radius:20px;
   box-shadow:0 10px 30px rgba(0,0,0,0.3);
 }
@@ -40,12 +41,25 @@ video{
   display:none;
 }
 
-#loveMessage{
+#surprise{
   margin-top:25px;
-  color:#d6336c;
+  animation:fadeIn 2s ease;
 }
 
 .quote{
   font-style:italic;
-  font-size:18px;
+  margin:10px;
+  color:#d6336c;
+}
+
+canvas{
+  position:fixed;
+  top:0;
+  left:0;
+  pointer-events:none;
+}
+
+@keyframes fadeIn{
+  from{opacity:0; transform:scale(.8)}
+  to{opacity:1; transform:scale(1)}
 }
