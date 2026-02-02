@@ -2,7 +2,7 @@ const yesBtn = document.getElementById("yesBtn");
 const noBtn = document.getElementById("noBtn");
 const surprise = document.getElementById("surprise");
 const message = document.getElementById("loveMessage");
-const music = document.getElementById("bgMusic");
+
 
 const confettiCanvas = document.getElementById("confetti");
 const heartsCanvas = document.getElementById("hearts");
@@ -18,7 +18,7 @@ confettiCanvas.height = heartsCanvas.height = window.innerHeight;
 yesBtn.onclick = () => {
 
   surprise.style.display = "block";
-  music.play();
+  
 
   typeWriter("Yay! You made my day ❤️✨");
 
