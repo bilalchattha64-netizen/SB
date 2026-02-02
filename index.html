@@ -9,29 +9,37 @@
 
 <div class="container">
 
-  <h1>💖 Shaba G Will you be my Sweet-Cute-Sexy Valentine? 💖</h1>
+  <h1 id="mainTitle">💖 Shaba G Will you be my Sweet-Cute-Sexy Valentine? 💖</h1>
 
   <div class="buttons">
     <button id="yesBtn">Yes 💕</button>
     <button id="noBtn">No 🙈</button>
   </div>
 
-  <!-- Hidden message -->
-  <div id="loveMessage" class="hidden">
-    <h2>Yay! You made my day ❤️✨</h2>
+  <!-- Surprise content -->
+  <div id="surprise" class="hidden">
+
+    <h2 id="loveMessage"></h2>
+
     <p class="quote">
-      "With you, every moment feels like a celebration of love and happiness."
+      "Every moment with you feels like fireworks in my heart."
     </p>
+
+    <video id="celebrationVideo" autoplay loop muted playsinline>
+      <source src="celebration.mp4" type="video/mp4">
+    </video>
+
   </div>
 
-  <!-- Hidden video -->
-  <video id="celebrationVideo" class="hidden" autoplay loop muted playsinline>
-    <source src="celebration.mp4" type="video/mp4">
-  </video>
+  <audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mp3">
+  </audio>
+
+  <canvas id="confetti"></canvas>
+  <canvas id="hearts"></canvas>
 
 </div>
 
 <script src="script.js"></script>
-
 </body>
 </html>
